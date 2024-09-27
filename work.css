@@ -1,0 +1,122 @@
+/* Comment example */
+
+body {
+	/*background-color: peachpuff; */
+	background-image: url(background.png);
+	background-size: 100%;
+	font-weight: 300;
+	font-style: normal;
+	font-size: larger;
+}
+
+h2 {
+	color: antiquewhite;
+	text-align: center;
+}
+
+h4 {
+	color: antiquewhite;
+}
+
+h3 {
+	color: antiquewhite;
+}
+
+p {
+	color: antiquewhite;
+}
+
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: antiquewhite;
+	text-align: center;
+}
+
+ol {
+	color: antiquewhite;
+}
+
+.text_definition {
+	text-align: center;
+}
+
+.example {
+	text-decoration: underline;
+}
+
+#Definition {
+	font-style: italic;
+}
+
+#navigation {
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	background-color: rgb(24, 52, 81);
+	overflow: hidden;
+}
+
+#navigation a {
+	display: block;
+	width: 300px;
+}
+
+#navigation li {
+	float: left;
+}
+
+#navigation a:link {
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+#navigation a:visited {
+	color: lightslategray;
+}
+
+#navigation a:hover {
+	color: rgb(243, 233, 221);
+	background-color: rgb(24, 52, 100);
+}
+
+#navigation a:active {
+	color: lightslategray;
+	text-decoration: line-through;
+}
+
+img {
+	width: 431px;
+	height: 329.5px;
+}
+
+.AI_learn {
+	display: block;
+	margin: auto;
+	padding: auto;
+	clear: both;
+}
+
+form {
+	color: antiquewhite;
+}
+
+.feedback {
+	display: block;
+	margin: auto;
+	padding: auto;
+	clear: both;
+}
+
+input[type='text'],
+select {
+	width: 33%;
+}
+
+input[type='password'] {
+	width: 33%;
+}
+
+input[type='email'] {
+	width: 33%;
+}
