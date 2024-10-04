@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Register: AI Insights</title>
-		<link rel='stylesheet' type='text/css' href='work.css'
+		<script src="myscripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="work.css" />
 	</head>
 	<ul id="navigation">
 		<li><a href="index.html"> Home page</a></li>
@@ -43,7 +44,29 @@
 			<input type="email" name="email" id="email" /><br />
 		</form>
 		<br />
-		<h4>
+		<br />
+		<p>
+			To register, type below 10010 to confirm you are not a robot, then in the
+			next field enter a plural number that in the power of 9 equals 512
+		</p>
+		<form name="confirm" onsubmit="return validateForm()" method="post">
+			<input type="text" name="code" id="validation" />
+			<input type="submit" name="Submit" />
+		</form>
+		<br />
+		<form name="practice" onsubmit="return performOp()" method="post">
+			<input type="text" name="number" id="validation" />
+			<input type="submit" name="Submit" />
+		</form>
+		<br />
+		<p id="registered">Registered: no</p>
+		<button type="button" onclick="registered()" class="registered">
+			Submit
+		</button>
+		<br />
+		<br />
+		<br />
+		<h4 id="feedback">
 			You can write your feedback here! It will help us improve our website
 			functionality and fix issues occurring during your session on it!
 		</h4>
@@ -51,6 +74,19 @@
 Type feedback here</textarea
 		>
 		<br />
-		<button type="button" class="feedback">Submit</button>
+		<button type="button" onclick="feedback_sent()" class="feedback">
+			Submit
+		</button>
+		<br />
+		<p>
+			You can support by sending a donation. One donation is $100, enter the
+			number of donations you would like to send the developer of the site:
+		</p>
+		<form name="donation" onsubmit="return donate()" method="post">
+			<input type="text" name="number" id="donation" />
+			<input type="submit" name="Submit" />
+		</form>
+		<br />
+		<p id="date"></p>
 	</body>
 </html>
