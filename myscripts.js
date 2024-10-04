@@ -45,3 +45,5 @@ function donate() {
 	var total_donation = +donation_amount * 100
 	alert('You are ready to donate $' + total_donation + ', thank you!')
 }
+
+window.alert('Welcome to the register page!')
